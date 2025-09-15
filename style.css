@@ -30,6 +30,11 @@ section {
   color: var(--text-color);
 }
 
+section h2{
+  font-size: var(--h2-font-size);
+  text-align: center;
+}
+
 /* header section */
 header{
   display: flex;
@@ -98,23 +103,41 @@ header nav a:hover{
 /* about section */
 .about{
   background-color: var(--secent-bg-color);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
-}
-
-.about h2{
-  font-size: var(--h2-font-size);
 }
 
 .about div{
   background-color: var(--first-bg-color);
-  width: 70vw;
+  width: 60vw;
   margin-top: 50px;
   padding: 50px 5vw;
   border-radius: 15px;
   font-size: var(--normal-font-size);
   line-height: var(--normal-line-height);
   word-spacing: 5px;
+  justify-self: center;
+}
+
+/* education section */
+.education div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-self: center;
+  background-color: var(--secent-bg-color);
+  margin-top: 50px;
+  padding: 50px 30px;
+  width: 400px;
+  height: 200px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.education div h3 {
+  font-size: 2.6rem;
+}
+
+.education div p {
+  font-size: 1.3rem;
+  margin-top: 20px;
 }
