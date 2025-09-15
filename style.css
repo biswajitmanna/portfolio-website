@@ -1,9 +1,11 @@
+/* default ghanges */
 *{
   margin: 0;
   padding: 0;
   background-color: none;
   font-family: Georgia, 'Times New Roman', Times, serif;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 :root{
@@ -11,11 +13,20 @@
   --secent-bg-color: #6b7280;
   --text-color: #ced1d8;
   --hover-color: #79e72f;
+  --h2-font-size: 4vw;
 }
 
 body{
-  padding: 0px 30px;
+  height: 100%;
+  width: 100%;
   background-color: var(--first-bg-color);
+}
+
+section {
+  height: 100vh;
+  padding: 0px 40px;
+  padding-top: 70px;
+  color: var(--text-color);
 }
 
 /* header section */
@@ -27,15 +38,16 @@ header{
   top: 15px;
   left: 30px;
   right: 30px;
+  height: 40px;
   padding: 5px 10px;
   background-color: transparent;
-  backdrop-filter: blur;
+  backdrop-filter: blur(1.5px);
   border-radius: 15px;
-  color: var(--text-color);
 }
 
 .portfolio{
   font-size: 1.5rem;
+  color: var(--text-color);
 }
 
 header nav a {
@@ -46,4 +58,36 @@ header nav a {
 
 header nav a:hover{
   color: var(--hover-color);
+}
+
+/* home section */
+.home{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 3px;
+  align-items: center;
+}
+
+.home div .greetings {
+  font-size: 4vw;
+}
+
+.home div h1 {
+  font-size: 5.5vw;
+}
+
+.home div .description{
+  margin-top: 20px;
+  font-size: 2vw;
+}
+
+.my-photo-container {
+  display: flex;
+  justify-content: center;
+}
+
+.my-photo {
+  width: 65%;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px 5px #6b7280;
 }
