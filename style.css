@@ -141,3 +141,29 @@ header nav a:hover{
   font-size: 1.3rem;
   margin-top: 20px;
 }
+
+/* skills section */
+.skills {
+  background-color: var(--secent-bg-color);
+
+}
+
+.skills div{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  margin-top: 50px;
+  
+}
+
+.skills div p {
+  background-color: var(--first-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 20px;
+  height: 150px;
+  width: 150px;
+  border-radius: 15px;
+}
