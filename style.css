@@ -127,7 +127,7 @@ header nav a:hover{
   background-color: var(--secent-bg-color);
   margin-top: 50px;
   padding: 50px 30px;
-  width: 400px;
+  width: 425px;
   height: 200px;
   border-radius: 15px;
   text-align: center;
@@ -166,4 +166,60 @@ header nav a:hover{
   height: 150px;
   width: 150px;
   border-radius: 15px;
+}
+
+/* projects section */
+.projects div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-self: center;
+  background-color: var(--secent-bg-color);
+  margin-top: 50px;
+  padding: 50px 30px;
+  width: 425px;
+  height: 100px;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+/* contact section */
+.contact {
+  background-color: var(--secent-bg-color);
+}
+
+.social-media-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  justify-self: center;
+  background-color: var(--first-bg-color);
+  margin-top: 50px;
+  padding: 50px 30px;
+  width: auto;
+  height: 100px;
+  border-radius: 15px;
+  font-size: 1.5rem;
+}
+
+.social-media-container h3 {
+  font-size: 2.6rem;
+}
+
+.social-media-links {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  column-gap: 20px;
+}
+
+.social-media-links a {
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.social-media-links a:hover {
+  color: var(--hover-color);
 }
