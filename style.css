@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   background-color: none;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: "Zalando Sans Expanded", Georgia, 'Times New Roman', Times, serif;
   text-decoration: none;
   scroll-behavior: smooth;
 }
@@ -13,9 +13,9 @@
   --secent-bg-color: #1f2937;
   --text-color: #ced1d8;
   --hover-color: #79e72f;
-  --h2-font-size: 4vw;
-  --normal-font-size: 1.1vw;
-  --normal-line-height: 1.3vw;
+  --h2-font-size: 4rem;
+  --normal-font-size: 1.2rem;
+  --normal-line-height: 1.4rem;
 }
 
 body{
@@ -26,7 +26,7 @@ body{
 
 section {
   height: auto;
-  padding: 70px 40px;
+  padding: 90px 50px;
   color: var(--text-color);
 }
 
@@ -77,16 +77,16 @@ header nav a:hover{
 }
 
 .home div .greetings {
-  font-size: 4vw;
+  font-size: 4.7rem;
 }
 
 .home div h1 {
-  font-size: 5.5vw;
+  font-size: 6rem;
 }
 
 .home div .description{
   margin-top: 20px;
-  font-size: 2vw;
+  font-size: 2.3rem;
 }
 
 .social-media-in-body {
@@ -125,7 +125,7 @@ header nav a:hover{
 
 .about div{
   background-color: var(--first-bg-color);
-  width: 60vw;
+  width: 1000px;
   margin-top: 50px;
   padding: 50px 5vw;
   border-radius: 15px;
@@ -144,18 +144,18 @@ header nav a:hover{
   background-color: var(--secent-bg-color);
   margin-top: 50px;
   padding: 50px 30px;
-  width: 425px;
+  width: 500px;
   height: 200px;
   border-radius: 15px;
   text-align: center;
 }
 
 .education div h3 {
-  font-size: 2.6rem;
+  font-size: 2.3rem;
 }
 
 .education div p {
-  font-size: 1.3rem;
+  font-size: var(--normal-font-size);
   margin-top: 20px;
 }
 
@@ -168,8 +168,9 @@ header nav a:hover{
 .skills div{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
+  justify-self: center;
   margin-top: 50px;
-  
+  width: 1000px;
 }
 
 .skills div div {
@@ -179,8 +180,8 @@ header nav a:hover{
   justify-content: center;
   align-items: center;
   padding: 20px;
-  height: 150px;
-  width: 150px;
+  height: 120px;
+  width: 120px;
   background-color: var(--first-bg-color);
   border-radius: 15px;
 }
@@ -223,11 +224,11 @@ header nav a:hover{
   background-color: var(--secent-bg-color);
   margin-top: 50px;
   padding: 50px 30px;
-  width: 425px;
+  width: 500px;
   height: 100px;
   border-radius: 15px;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: var(--normal-font-size);
 }
 
 /* contact section */
@@ -244,14 +245,14 @@ header nav a:hover{
   background-color: var(--first-bg-color);
   margin-top: 50px;
   padding: 50px 30px;
-  width: auto;
+  width: 500px;
   height: 100px;
   border-radius: 15px;
   font-size: 1.5rem;
 }
 
 .social-media-container h3 {
-  font-size: 2.6rem;
+  font-size: 2.3rem;
 }
 
 .social-media-links {
