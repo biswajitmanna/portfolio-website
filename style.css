@@ -168,21 +168,50 @@ header nav a:hover{
 .skills div{
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  justify-items: center;
   margin-top: 50px;
   
 }
 
-.skills div p {
-  background-color: var(--first-bg-color);
+.skills div div {
   display: flex;
+  flex-direction: column;
+  justify-self: center;
   justify-content: center;
   align-items: center;
-  font-size: 1.5rem;
   padding: 20px;
   height: 150px;
   width: 150px;
+  background-color: var(--first-bg-color);
   border-radius: 15px;
+}
+
+.skills div div i {
+  font-size: 3rem;
+}
+
+.c-logo{
+  color: blue;
+}
+
+.html-logo{
+  color: #E34C26;
+}
+
+.css-logo{
+  color: #663399;
+}
+
+.js-logo{
+  color: #F7DF1E;
+}
+
+.sql-logo{
+  color: #00758F;
+}
+
+.skills div div p {
+  margin-top: 20px;
+  font-size: 1rem;
 }
 
 /* projects section */
