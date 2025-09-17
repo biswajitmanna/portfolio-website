@@ -89,6 +89,23 @@ header nav a:hover{
   font-size: 2vw;
 }
 
+.social-media-in-body {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 1.5rem;
+}
+
+.social-media-in-body a {
+  color: var(--text-color);
+  margin-right: 20px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+.social-media-in-body a:hover {
+  color: var(--hover-color);
+}
+
 .my-photo-container {
   display: flex;
   justify-content: center;
@@ -215,7 +232,6 @@ header nav a:hover{
 }
 
 .social-media-links a {
-  font-size: 1.3rem;
   color: var(--text-color);
   cursor: pointer;
   transition: 0.5s ease;
