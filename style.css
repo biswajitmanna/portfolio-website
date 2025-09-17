@@ -216,10 +216,21 @@ header nav a:hover{
 
 .social-media-links a {
   font-size: 1.3rem;
+  color: var(--text-color);
   cursor: pointer;
   transition: 0.5s ease;
 }
 
 .social-media-links a:hover {
   color: var(--hover-color);
+}
+
+/* footer section */
+footer {
+  text-align: center;
+  padding: 10px 0px;
+}
+
+footer p {
+  color: var(--text-color);
 }
