@@ -5,6 +5,7 @@
   background-color: none;
   font-family: "Zalando Sans Expanded", Georgia, 'Times New Roman', Times, serif;
   text-decoration: none;
+  color: var(--text-color);
   scroll-behavior: smooth;
 }
 
@@ -13,9 +14,11 @@
   --secent-bg-color: #1f2937;
   --text-color: #ced1d8;
   --hover-color: #79e72f;
+  --border-color: #ced1d85f;
   --h2-font-size: 4rem;
   --normal-font-size: 1.2rem;
   --normal-line-height: 1.4rem;
+  --max-width: 1200px;
 }
 
 body{
@@ -26,7 +29,7 @@ body{
 
 section {
   height: auto;
-  padding: 90px 50px;
+  padding: 90px 30px;
   color: var(--text-color);
 }
 
@@ -47,13 +50,18 @@ header{
   height: 40px;
   padding: 5px 10px;
   background-color: transparent;
-  backdrop-filter: blur(1.5px);
-  border-radius: 15px;
+  backdrop-filter: blur(3px);
+  border-radius: 20px;
 }
 
 .portfolio{
   font-size: 1.5rem;
   color: var(--text-color);
+}
+
+header i {
+  display: none;
+  visibility: hidden;
 }
 
 header nav a {
@@ -69,35 +77,41 @@ header nav a:hover{
 /* home section */
 .home{
   height: 100vh;
-  padding-bottom: 0;
+  padding: 90px 10px 0px 10px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 3px;
   align-items: center;
 }
 
+.home div {
+  text-align: center;
+}
+
 .home div .greetings {
-  font-size: 4.7rem;
+  font-size: 4.5vw;
 }
 
 .home div h1 {
-  font-size: 6rem;
+  font-size: 5vw;
 }
 
 .home div .description{
   margin-top: 20px;
-  font-size: 2.3rem;
+  font-size: 1.8vw;
 }
 
 .social-media-in-body {
-  display: inline-block;
+  display: flex;
+  justify-content: space-between;
+  justify-self: center;
+  width: 250px;
   margin-top: 20px;
   font-size: 1.5rem;
 }
 
 .social-media-in-body a {
   color: var(--text-color);
-  margin-right: 20px;
   cursor: pointer;
   transition: 0.5s ease;
 }
@@ -170,7 +184,7 @@ header nav a:hover{
   grid-template-columns: repeat(5, 1fr);
   justify-self: center;
   margin-top: 50px;
-  width: 1000px;
+  width: 1100px;
 }
 
 .skills div div {
@@ -279,4 +293,206 @@ footer {
 
 footer p {
   color: var(--text-color);
+}
+
+/* make responsive */
+@media (max-width: 1200px) {
+  .home{
+    height: auto;
+    padding-bottom: 90px;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+    text-align: center;
+    padding-top: 150px;
+  }
+
+  
+
+  .home div .greetings {
+    font-size: 3.5rem;
+  }
+
+  .home div h1 {
+    font-size: 3.5rem;
+  }
+
+  .home div .description{
+    font-size: 1.4rem;
+  }
+
+  .my-photo {
+    width: 450px;
+  }
+
+  section h2{
+    font-size: 3rem;
+  }
+
+  .about div{
+    width: 90vw;
+    font-size: 1rem;
+    padding: 30px 2vw;
+  }
+
+  .education div h3 {
+    font-size: 2rem;
+  }
+
+  .skills div{
+    width: 90vw;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 20px;
+  }
+
+  .social-media-container h3 {
+  font-size: 2rem;
+  }
+}
+
+/* for tablets and small screens */
+@media (max-width: 900px) {
+  header{
+    left: 15px;
+    right: 15px;
+  }
+
+  header i {
+    position: relative;
+    display: block;
+    visibility: visible;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    cursor: pointer;
+  }
+
+  header nav {
+    display: none;
+    visibility: hidden;
+  }
+
+  .navigation-menu {
+    visibility: visible;
+    position: absolute;
+    right: 0px;
+    top: 60px;
+    padding: 5px 20px 5px 10px;
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(12, 23, 38, 0.7);
+  }
+
+  .skills div{
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .skills div div {
+    width: 100px;
+    height: 100px;
+  }
+
+  .skills div div i {
+    font-size: 2.7rem;
+  }
+}
+
+/* for mobile devices */
+@media (max-width: 600px) {
+  header{
+    left: 10px;
+    right: 10px;
+  }
+
+  header i {
+    font-size: 1.2rem;
+  }
+
+  .portfolio{
+    font-size: 1.2rem; 
+  }
+
+  .home div .greetings {
+    font-size: 8.5vw;
+  }
+
+  .home div h1 {
+    font-size: 9.5vw;
+  }
+
+  .home div .description{
+    font-size: 4.3vw;
+  }
+
+  .social-media-in-body {
+    width: 200px;
+    font-size: 1.2rem;
+  }
+
+  .my-photo {
+    width: 75vw;
+  }
+
+  section h2{
+    font-size: 2rem;
+  }
+
+  .about div{
+    padding: 20px 2vw;
+    font-size: 0.9rem;
+  }
+
+  .education div{
+    width: 90vw;
+    padding: 30px 2vw;
+  }
+
+  .education div h3 {
+    font-size: 1.6rem;
+  }
+
+  .education div p {
+    font-size: 1rem;
+  }
+
+  .skills div{
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 12px;
+    row-gap: 0px;
+    width: 90vw;
+  }
+
+  .skills div div {
+    width: 90px;
+    height: 90px;
+  }
+
+  .skills div div i {
+    font-size: 2.3rem;
+  }
+
+  .projects div {
+    width: 90vw;
+    padding: 30px 2vw;
+    font-size: 1rem;
+  }
+
+  .social-media-container{
+    width: 90vw;
+    padding: 30px 2vw;
+  }
+
+  .social-media-container h3 {
+    font-size: 1.6rem;
+  }
+
+  .social-media-links a {
+    font-size: 1.2rem;
+  }
+
+  footer p {
+    font-size: 0.7rem;
+  }
 }
