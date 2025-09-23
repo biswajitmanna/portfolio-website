@@ -12,8 +12,11 @@
 :root{
   --first-bg-color: #0c1726;
   --secent-bg-color: #1f2937;
-  --text-color: #ced1d8;
-  --hover-color: #79e72f;
+  --text-color: #D2C1B6;
+  --h3-text-color: #818FB4;
+  --hover-color: #BED754;
+  --secent-hover-color: #d0ff00;
+  --active-nav-color: #5C8374;
   --border-color: #ced1d85f;
   --h2-font-size: 4rem;
   --normal-font-size: 1.2rem;
@@ -36,6 +39,8 @@ section {
 section h2{
   font-size: var(--h2-font-size);
   text-align: center;
+  color: #456882;
+  text-shadow: 1px 1px 2px #93B1A6;
 }
 
 /* header section */
@@ -74,6 +79,11 @@ header nav a:hover{
   color: var(--hover-color);
 }
 
+.active-nav{
+  color: var(--active-nav-color);
+  font-weight: bold;
+}
+
 /* home section */
 .home{
   height: 100vh;
@@ -94,6 +104,8 @@ header nav a:hover{
 
 .home div h1 {
   font-size: 5vw;
+  color: #234C6A;
+  text-shadow: 2px 2px 2px #456882;
 }
 
 .home div .description{
@@ -110,14 +122,14 @@ header nav a:hover{
   font-size: 1.5rem;
 }
 
-.social-media-in-body a {
+.social-media-in-body a i {
   color: var(--text-color);
   cursor: pointer;
   transition: 0.5s ease;
 }
 
-.social-media-in-body a:hover {
-  color: var(--hover-color);
+.social-media-in-body a i:hover {
+  color: var(--secent-hover-color);
 }
 
 .my-photo-container {
@@ -128,7 +140,7 @@ header nav a:hover{
 .my-photo {
   width: 65%;
   border-radius: 50%;
-  box-shadow: 0px 0px 10px 5px #6b7280;
+  box-shadow: 0px 0px 10px 5px #234C6A;
 }
 
 /* about section */
@@ -142,11 +154,17 @@ header nav a:hover{
   width: 1000px;
   margin-top: 50px;
   padding: 50px 5vw;
+  border: 1px solid var(--border-color);
   border-radius: 15px;
   font-size: var(--normal-font-size);
   line-height: var(--normal-line-height);
   word-spacing: 5px;
   justify-self: center;
+  transition: 0.5s ease;
+}
+
+.about div:hover{
+  transform: scale(1.01);
 }
 
 /* education section */
@@ -160,12 +178,19 @@ header nav a:hover{
   padding: 50px 30px;
   width: 500px;
   height: 200px;
+  border: 1px solid var(--border-color);
   border-radius: 15px;
   text-align: center;
+  transition: 0.5s ease;
+}
+
+.education div:hover {
+  transform: scale(1.01);
 }
 
 .education div h3 {
   font-size: 2.3rem;
+  color: var(--h3-text-color);
 }
 
 .education div p {
@@ -197,7 +222,13 @@ header nav a:hover{
   height: 120px;
   width: 120px;
   background-color: var(--first-bg-color);
+  border: 1px solid var(--border-color);
   border-radius: 15px;
+  transition: 0.5s ease;
+}
+
+.skills div div:hover {
+  transform: scale(1.1);
 }
 
 .skills div div i {
@@ -240,9 +271,15 @@ header nav a:hover{
   padding: 50px 30px;
   width: 500px;
   height: 100px;
+  border: 1px solid var(--border-color);
   border-radius: 15px;
   text-align: center;
   font-size: var(--normal-font-size);
+  transition: 0.5s ease;
+}
+
+.projects div:hover {
+  transform: scale(1.01);
 }
 
 /* contact section */
@@ -261,12 +298,19 @@ header nav a:hover{
   padding: 50px 30px;
   width: 500px;
   height: 100px;
+  border: 1px solid var(--border-color);
   border-radius: 15px;
   font-size: 1.5rem;
+  transition: 0.5s ease;
+}
+
+.social-media-container:hover {
+  transform: scale(1.01);
 }
 
 .social-media-container h3 {
   font-size: 2.3rem;
+  color: var(--h3-text-color);
 }
 
 .social-media-links {
@@ -275,14 +319,14 @@ header nav a:hover{
   column-gap: 20px;
 }
 
-.social-media-links a {
+.social-media-links a i{
   color: var(--text-color);
   cursor: pointer;
   transition: 0.5s ease;
 }
 
-.social-media-links a:hover {
-  color: var(--hover-color);
+.social-media-links a i:hover {
+  color: var(--secent-hover-color);
 }
 
 /* footer section */
