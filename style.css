@@ -57,6 +57,7 @@ header{
   background-color: transparent;
   backdrop-filter: blur(3px);
   border-radius: 20px;
+  z-index: 100;
 }
 
 .portfolio{
