@@ -43,4 +43,4 @@ Please do not send any pull requests (PRs) to this repository. If you wish to us
 This project is open source and available under the MIT License.
 
 ## Personal Information & Photo
-Note: You may use and modify the code in this project, but you are not permitted to use my name, personal information, or photo for any purpose. Please replace these with your own details and images.
+**Note:** You may use and modify the code in this project, but you are not permitted to use my name, personal information, or photo for any purpose. Please replace these with your own details and images.
