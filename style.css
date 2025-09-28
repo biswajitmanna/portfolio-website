@@ -12,8 +12,8 @@
 :root{
   --first-bg-color: #0c1726;
   --secent-bg-color: #1f2937;
-  --text-color: #D2C1B6;
-  --h3-text-color: #818FB4;
+  --text-color: #ecd6c7;
+  --h3-text-color: #9baee1;
   --hover-color: #BED754;
   --secent-hover-color: #d0ff00;
   --active-nav-color: #5C8374;
@@ -39,7 +39,7 @@ section {
 section h2{
   font-size: var(--h2-font-size);
   text-align: center;
-  color: #456882;
+  color: #64a6d8;
   text-shadow: 1px 1px 2px #93B1A6;
 }
 
@@ -105,7 +105,7 @@ header nav a:hover{
 
 .home div h1 {
   font-size: 5vw;
-  color: #234C6A;
+  color: #1385d7;
   text-shadow: 2px 2px 2px #456882;
 }
 
