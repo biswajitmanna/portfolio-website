@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-self: center;
+  width: 1100px;
+  border-bottom: 1px solid var(--second-color);
+  padding: var(--spacing-large) 0;
+}
+
+.nav ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+.nav ul li a {
+  padding: var(--spacing-small) var(--spacing-medium);
+  border-radius: var(--spacing-small);
+  transition: 0.3s ease;
+}
+
+.nav ul li a:hover {
+  color: var(--fourth-color);
+}
+
+.nav ul li a.active {
+  color: var(--fourth-color);
+  border: 1px solid var(--fourth-color);
+}

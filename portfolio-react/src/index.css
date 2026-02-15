@@ -5,8 +5,9 @@
   background-color: none;
   font-family: "Zalando Sans Expanded", Georgia, 'Times New Roman', Times, serif;
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--third-color);
   scroll-behavior: smooth;
+  font-weight: 200;
 }
 
 :root{
@@ -15,4 +16,23 @@
   --second-color: #BFC9D1;
   --third-color: #25343F;
   --fourth-color: #FF9B51;
+
+  /* spacing */
+  --spacing-small: 0.25rem;
+  --spacing-medium: 0.5rem;
+  --spacing-large: 1rem;
+
+  /* font sizes */
+  --font-size-small: 0.875rem;
+  --font-size-medium: 1rem;
+  --font-size-large: 1.75rem;
+}
+
+/* global */
+body{
+  background-color: var(--first-color);
+}
+
+h1 {
+  font-size: var(--font-size-large);
 }
