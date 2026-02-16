@@ -1,8 +1,9 @@
 .header {
+  position: fixed;
+  top: 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  justify-self: center;
   width: 1100px;
   border-bottom: 1px solid var(--second-color);
   padding: var(--spacing-large) 0;
