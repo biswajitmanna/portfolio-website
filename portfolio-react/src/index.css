@@ -37,5 +37,13 @@ body{
 }
 
 h1 {
+  font-size: var(--font-size-xlarge);
+}
+
+h2 {
   font-size: var(--font-size-large);
+}
+
+h2 span {
+  color: var(--fourth-color);
 }

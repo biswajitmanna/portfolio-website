@@ -7,6 +7,11 @@
   width: 1100px;
   border-bottom: 1px solid var(--second-color);
   padding: var(--spacing-large) 0;
+  background-color: var(--first-color);
+}
+
+.header h1 {
+  font-size: var(--font-size-large);
 }
 
 .nav ul {
