@@ -1,9 +1,9 @@
 import { FaGithub, FaLinkedin, FaXTwitter } from 'react-icons/fa6';
 import './HeroSection.css';
 
-function HeroSection() {
+function HeroSection({ id }) {
   return (
-    <section className="hero-section">
+    <section className="hero-section" id={id}>
       <div>
         <p className="hero-section-greeting">Hi there!</p>
         <h1 className="hero-section-name">I'm <span>Biswajit Manna</span></h1>

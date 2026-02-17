@@ -1,6 +1,7 @@
 import Header from "../components/Header";
 import HeroSection from "../components/HeroSection";
 import AboutSection from "../components/AboutSection";
+import Skills from "../components/Skills";
 import './Home.css';
 
 function Home () {
@@ -8,8 +9,9 @@ function Home () {
     <div className="home">
       <Header />
 
-      <HeroSection />
-      <AboutSection />
+      <HeroSection id="home" />
+      <AboutSection id="about" />
+      <Skills id="skills" />
     </div>
   )
 }

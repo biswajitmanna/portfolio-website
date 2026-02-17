@@ -25,11 +25,14 @@
 }
 
 .project-link, .contact-link {
-  font-size: var(--font-size-small);
   padding: var(--spacing-medium) var(--spacing-large);
   border: 1px solid var(--second-color);
   border-radius: var(--spacing-medium);
   color: var(--third-color);
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -41,19 +44,25 @@
 
 .social-links {
   margin-top: var(--spacing-large);
-  gap: 20px;
   display: flex;
   align-items: center;
+  gap: var(--spacing-medium);
+  background-color: var(--second-color);
+  width: fit-content;
+  height: 50px;
+  padding: var(--spacing-medium);
+  border-radius: 25px;
 }
 
 .social-links a {
   color: var(--third-color);
+  background-color: var(--first-color);
   font-size: var(--font-size-large);
   transition: color 0.3s ease;
   display: flex;
   align-items: center;
-  height: 40px;
-  width: 40px;
+  height: 36px;
+  width: 36px;
   padding: var(--spacing-medium);
   border: 1px solid var(--second-color);
   border-radius: 50%;
