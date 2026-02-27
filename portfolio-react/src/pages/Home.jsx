@@ -3,6 +3,7 @@ import HeroSection from "../components/HeroSection";
 import AboutSection from "../components/AboutSection";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
+import Contact from "../components/Contact";
 import './Home.css';
 
 function Home () {
@@ -14,6 +15,7 @@ function Home () {
       <AboutSection id="about" />
       <Skills id="skills" />
       <Projects id="projects" />
+      <Contact id="contact" />
     </div>
   )
 }

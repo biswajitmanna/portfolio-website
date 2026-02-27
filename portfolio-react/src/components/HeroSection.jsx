@@ -10,8 +10,8 @@ function HeroSection({ id }) {
         <p className="sort-bio">I develop web applications</p>
 
         <div className="quick-links">
-          <a href="#projects" className="project-link">Projects</a>
-          <a href="#contact" className="contact-link">Contact</a>
+          <a href="#projects" className="cta-link">Projects</a>
+          <a href="#contact" className="cta-link">Contact</a>
         </div>
 
         <div className="social-links">

@@ -1,0 +1,34 @@
+.social-description {
+  margin-top: var(--spacing-small);
+  color: var(--fifth-color);
+  font-size: var(--font-size-medium);
+  justify-self: center;
+}
+
+.social-links-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.social-link {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--second-color);
+  border-radius: 20px;
+  padding: var(--spacing-small);
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  border: 1px solid var(--fourth-color);
+}
+
+.social-icon {
+  font-size: 1.25rem;
+  fill: var(--fifth-color);
+}
