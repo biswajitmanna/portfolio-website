@@ -39,6 +39,7 @@ body{
 
 section {
   padding: var(--spacing-xlarge) 0;
+  scroll-margin-top: 65px;
 }
 
 h1 {
