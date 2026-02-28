@@ -31,4 +31,9 @@
 .social-icon {
   font-size: 1.25rem;
   fill: var(--fifth-color);
+  transition: all 0.3s ease;
+}
+
+.social-link:hover .social-icon {
+  fill: var(--fourth-color);
 }

@@ -4,6 +4,7 @@ import AboutSection from "../components/AboutSection";
 import Skills from "../components/Skills";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 import './Home.css';
 
 function Home () {
@@ -16,6 +17,7 @@ function Home () {
       <Skills id="skills" />
       <Projects id="projects" />
       <Contact id="contact" />
+      <Footer />
     </div>
   )
 }

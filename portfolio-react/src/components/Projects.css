@@ -11,6 +11,7 @@
 }
 
 .project-image-container {
+  margin: var(--spacing-large);
   padding: var(--spacing-large);
   border: 1px solid var(--second-color);
   border-radius: var(--spacing-large);
@@ -33,6 +34,7 @@
   flex-direction: column;
   justify-content: center;
   gap: var(--spacing-large);
+  margin: var(--spacing-large);
 }
 
 .project-description {

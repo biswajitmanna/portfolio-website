@@ -1,3 +1,4 @@
+import { FaEllipsis } from 'react-icons/fa6';
 import './Header.css'
 
 function Header() {
@@ -14,6 +15,9 @@ function Header() {
           <li><a href="#contact">Social links</a></li>
         </ul>
       </nav>
+      <div className="menu-icon">
+        <FaEllipsis />
+      </div>
     </header>
   );
 }
