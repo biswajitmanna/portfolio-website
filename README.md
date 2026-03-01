@@ -13,7 +13,7 @@ This is a personal portfolio website for showcasing my skills, projects, educati
 
 ## Getting Started
 
-Refer to `portfolio-react/README.md` for detailed setup, development, and build instructions.
+Refer to `frontend/README.md` for detailed setup, development, and build instructions.
 
 
 ## Contributing
