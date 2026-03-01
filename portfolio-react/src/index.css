@@ -38,7 +38,7 @@ body{
 }
 
 section {
-  padding: var(--spacing-xlarge) 0;
+  padding: var(--spacing-xlarge);
   scroll-margin-top: 65px;
 }
 
@@ -53,4 +53,24 @@ h2 {
 
 h2 span {
   color: var(--fourth-color);
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: var(--spacing-large);
+  }
+  
+  h2 {
+    font-size: var(--font-size-medium);
+  }
+
+  p {
+    font-size: var(--font-size-small);
+  }
+}
+
+@media (max-width: 550px) {
+  h1 {
+    font-size: var(--font-size-large);
+  }
 }

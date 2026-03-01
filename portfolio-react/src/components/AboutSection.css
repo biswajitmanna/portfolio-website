@@ -12,3 +12,14 @@
   text-align: left;
   flex: 1;
 }
+
+@media (max-width: 768px) {
+  .about-text-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .about-text-container p {
+    padding: var(--spacing-medium);
+  }
+}

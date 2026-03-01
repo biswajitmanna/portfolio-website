@@ -76,3 +76,27 @@
 .skill-vscode {
   fill: #0078D4;
 }
+
+@media (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+    gap: 0;
+    background: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .skills-container div {
+    justify-self: left;
+    align-items: flex-start;
+  }
+
+  .skills-list {
+    gap: var(--spacing-medium);
+  }
+
+  .skills-list li {
+    height: 60px;
+    width: 60px;
+  }
+}
